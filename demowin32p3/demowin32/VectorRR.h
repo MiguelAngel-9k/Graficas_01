@@ -2,9 +2,7 @@
 #define _vect
 #include <math.h>
 
-//ejemplo de uso de enumeracion para definir cual eje se utilizara
 enum Ejes{EjeX, EjeY, EjeZ};
-//clase VectorRR desarrollada por Rafael Rosas para los UltraLMADs
 class VectorRR{
 	//propiedades del vector, sus componentes
 public:
