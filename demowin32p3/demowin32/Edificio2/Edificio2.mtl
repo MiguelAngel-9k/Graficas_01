@@ -1,0 +1,167 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 03.12.2020 18:40:28
+
+newmtl Edificio2_Building_01___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MGH_IMG_3243.tga
+	map_Kd D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MGH_IMG_3243.tga
+
+newmtl Edificio2_Building_02___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0000 0.0000 0.0000
+	Kd 0.0000 0.0000 0.0000
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Building_fans_diff_01.tga
+	map_Kd D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Building_fans_diff_01.tga
+	map_d D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Building_fans_01.tga
+
+newmtl Edificio2_Building_08___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Buildings_Roof_detail.tga
+	map_Kd D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Buildings_Roof_detail.tga
+
+newmtl Edificio2_Building_03___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MGH_IMG_3243_B.tga
+	map_Kd D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MGH_IMG_3243_B.tga
+
+newmtl Edificio2_Building_04___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Wall_Brick_03.tga
+	map_Kd D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Wall_Brick_03.tga
+
+newmtl Edificio2_Building_05___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_door_02.tga
+	map_Kd D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_door_02.tga
+
+newmtl Edificio2_Building_06___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Wall_Brick_04.tga
+	map_Kd D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Wall_Brick_04.tga
+
+newmtl Edificio2_Building_07___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Ground_01.tga
+	map_Kd D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Ground_01.tga
+
+newmtl Edificio2_Building_Material__56
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Buildings_Roof_detail.tga
+	map_Kd D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MAF_Buildings_Roof_detail.tga
+
+newmtl Edificio2_Building_01___Defasdas
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5882 0.5882 0.5882
+	Kd 0.5882 0.5882 0.5882
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MGH_IMG_3243.tga
+	map_Kd D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Edificio2\Textures\MGH_IMG_3243.tga
+
+newmtl Edificio2_Building_Material__150
+	Ns 26.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0510 0.0510 0.0510
+	Kd 0.0510 0.0510 0.0510
+	Ks 0.9990 0.9990 0.9990
+	Ke 0.0000 0.0000 0.0000
+
+newmtl Edificio2_Building_09___Default
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.0863 0.1059 0.1529
+	Kd 0.0863 0.1059 0.1529
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
