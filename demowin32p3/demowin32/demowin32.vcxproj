@@ -61,7 +61,7 @@
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>$(ProjectDir)Dependence/freeglut-3.0.0/include;$(ProjectDir)Dependence/glfw-3.3.2.bin.WIN32/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependence/freeglut-3.0.0/include;$(ProjectDir)Dependence/glfw-3.3.2.bin.WIN32/include;$(ProjectDir)Dependence/glew-2.1.0/include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <AdditionalDependencies>glew.lib;freeglutd.lib;comctl32.lib;dinput8.lib;dxguid.lib;gdi32.lib;GdiPlus.lib;glu32.lib;OpenGL32.lib;User32.lib;winmm.lib;%(AdditionalDependencies);glew.lib</AdditionalDependencies>
@@ -81,7 +81,7 @@
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>$(ProjectDir)Dependence/freeglut-3.0.0/include;$(ProjectDir)Dependence/glfw-3.3.2.bin.WIN32/include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)Dependence/freeglut-3.0.0/include;$(ProjectDir)Dependence/glfw-3.3.2.bin.WIN32/include;$(ProjectDir)Dependence/glew-2.1.0/include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
