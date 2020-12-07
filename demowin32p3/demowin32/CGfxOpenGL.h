@@ -42,6 +42,7 @@ public:
 	float rotz;
 	float grad_rad;
 	bool cambio;
+
 	struct cam {
 		float camx;
 		float camy;
@@ -59,7 +60,23 @@ public:
 	void SetupProjection(int width, int height);
 	void Prepare(float dt);
 	void Render();
-	//void Carga_Modelo(GLMmodel *Model);
-	
-	void mover_raton();
 };
+
+//class cameraSettings {
+//
+//	cameraSettings() {};
+//
+//	glm::vec3 position;
+//	glm::vec3 direction;
+//	glm::vec3 upVector;
+//
+//	glm::mat4 projectionMatrix;
+//	glm::mat4 viewMatrix;
+//	glm::mat4 modelMatrix = glm::mat4(1.0f);
+//
+//	glm::mat4 MVP;
+//
+//	void initCamara(Camera*);
+//	void setCamara(Camera*);
+//
+//};

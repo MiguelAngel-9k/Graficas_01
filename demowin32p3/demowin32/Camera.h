@@ -30,7 +30,7 @@ public:
 		ux = 0, uy = 1, uz = 0;
 		gluLookAt(px, py, pz, dx, dy, dz, ux, uy, uz);
 		viewVectorMag = sqrt(pow(dx - px, 2) + pow(dz - pz, 2));
-		ableToMove = true;
+		ableToMove = true;		
 	}
 
 	void cameraUpdate()

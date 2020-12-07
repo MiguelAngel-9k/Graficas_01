@@ -94,6 +94,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp" />
     <ClCompile Include="CGfxOpenGL.cpp" />
     <ClCompile Include="glm.cpp" />
     <ClCompile Include="glmimg.cpp" />
