@@ -67,7 +67,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="vertexShader.glsl">
+    <None Include="fragmentShader.glsl">
       <Filter>Archivos de recursos</Filter>
     </None>
   </ItemGroup>

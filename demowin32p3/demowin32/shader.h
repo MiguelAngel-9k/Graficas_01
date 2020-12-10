@@ -2,5 +2,5 @@
 
 
 //
-bool cargaShaders(const char *, const char *);
+bool cargaShaders(GLuint);
 

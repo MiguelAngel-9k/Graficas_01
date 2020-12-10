@@ -6,6 +6,7 @@
 #include <gl/glu.h>
 #include "glext.h"
 #include "cargaImgs.h"
+#include "shader.h"
 
 class SkyBox{
 
@@ -14,12 +15,16 @@ protected:
 	unsigned int m_grassTexture;
 	unsigned int m_waterTexture;
 
+	//GLuint programID;
+
 	float     m_size;
 	GLubyte   mapa_de_alturas[260 * 260];
 
 public:
   SkyBox()
   {
+	  //cargaShaders(programID)
+
 	for (int i = 0; i < 6; i++)
 		m_texturas[i] = 0;
   }
@@ -44,7 +49,7 @@ public:
 
   }
 
-  bool CargaTextura(WCHAR* top, WCHAR* bottom, WCHAR* front, WCHAR* back, WCHAR* left, WCHAR* right, WCHAR* terreno_mapa, WCHAR* mater, WCHAR* water)
+  bool CargaTextura(WCHAR* top, WCHAR* bottom, WCHAR* front, WCHAR* back, WCHAR* left, WCHAR* right, WCHAR* terreno_mapa, WCHAR* mater, WCHAR* mater2, WCHAR* water)
   {
 	Imagenes texturas;
 
@@ -60,6 +65,42 @@ public:
 	glBindTexture(GL_TEXTURE_2D, m_grassTexture);
 	gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGB, texturas.Ancho(), texturas.Alto(), GL_RGB, GL_UNSIGNED_BYTE, texturas.Dir_Imagen());
 	texturas.Descarga();
+
+	/*
+		textura uno
+		textura.Carga(mater);
+		GLuint texture0;
+		glGenTextures(1, &texture0);
+		glBindTexture(GL_TEXTURE_2D, texture0);
+
+		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+
+		GLTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, texturas.Alto(), texturas.Ancho(), 0, GL_RGBA, GL_UNSIGNED_BYTE, mater);
+
+		glActiveTexture(0);
+		glBindTexture(GL_TEXTURE_2D, 0);
+		textura.Descarga();
+		
+		//texura dos
+		textura.Carga(mater2);
+		GLuint texture1;
+		glGenTextures(1, &texture1);
+		glBindTexture(GL_TEXTURE_2D, texture1);
+
+		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+
+		GLTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, texturas.Alto(), texturas.Ancho(), 0, GL_RGBA, GL_UNSIGNED_BYTE, mater);
+
+		glActiveTexture(0);
+		glBindTexture(GL_TEXTURE_2D, 0);
+		textura.Descarga();
+	*/
 	
 
 	texturas.Carga(top);
@@ -188,7 +229,20 @@ public:
 		glTexCoord2f(0.0f, 0.0f); glVertex3f(-m_size, -m_size, m_size);
 	glEnd();
 
-	
+	/*
+	//usuamos el programa
+	glUseProgram(programID);
+	//cargamos los valores al shader
+	glUniformli(glGetUniformLocation(programID, "texture0"),0);
+	glUniformli(glGetUniformLocation(programID, "texture1"),1);
+	//activamos la textura
+	glActiveTexture(TEXTURE0);
+	glBindTexture(GL_TEXTURE_2D,texture0);
+	glActiveTexture(TEXTURE1);
+	glBindTexture(GL_TEXTURE_2D,texture1);
+
+		
+	*/
 
 	glPopAttrib();
 	glEndList();
