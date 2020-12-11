@@ -6,12 +6,13 @@
 #include <gl/glu.h>
 #include "glext.h"
 #include "cargaImgs.h"
-#include "shader.h"
+#include "shader.cpp"
 
 class SkyBox{
 
 protected:
 	unsigned int m_texturas[7];
+	unsigned int terrainMixed[2];
 	unsigned int m_grassTexture;
 	unsigned int m_waterTexture;
 
@@ -63,45 +64,44 @@ public:
 	texturas.Carga(mater);
 	glGenTextures(1, &m_grassTexture);
 	glBindTexture(GL_TEXTURE_2D, m_grassTexture);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 	gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGB, texturas.Ancho(), texturas.Alto(), GL_RGB, GL_UNSIGNED_BYTE, texturas.Dir_Imagen());
 	texturas.Descarga();
 
-	/*
-		textura uno
-		textura.Carga(mater);
-		GLuint texture0;
-		glGenTextures(1, &texture0);
-		glBindTexture(GL_TEXTURE_2D, texture0);
-
-		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-
-		GLTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, texturas.Alto(), texturas.Ancho(), 0, GL_RGBA, GL_UNSIGNED_BYTE, mater);
-
-		glActiveTexture(0);
-		glBindTexture(GL_TEXTURE_2D, 0);
-		textura.Descarga();
-		
-		//texura dos
-		textura.Carga(mater2);
-		GLuint texture1;
-		glGenTextures(1, &texture1);
-		glBindTexture(GL_TEXTURE_2D, texture1);
-
-		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
-		glTexParametri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-
-		GLTexImage2D(GL_TEXTURE_2D, 0, GL_RGBA, texturas.Alto(), texturas.Ancho(), 0, GL_RGBA, GL_UNSIGNED_BYTE, mater);
-
-		glActiveTexture(0);
-		glBindTexture(GL_TEXTURE_2D, 0);
-		textura.Descarga();
-	*/
 	
+		//texturas.Carga(mater);
+		//glGenTextures(1, &terrainMixed[TERRAIN_ONE]);
+		//glBindTexture(GL_TEXTURE_2D, terrainMixed[TERRAIN_ONE]);
+
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+
+		//gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGB, texturas.Ancho(), texturas.Alto(), GL_RGB, GL_UNSIGNED_BYTE, texturas.Dir_Imagen());
+
+		//texturas.Descarga();
+
+		//
+		////texura dos
+		//texturas.Carga(mater2);
+		//glGenTextures(1, &terrainMixed[TERRAIN_TWO]);
+		//glBindTexture(GL_TEXTURE_2D, terrainMixed[TERRAIN_TWO]);
+
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR_MIPMAP_LINEAR);
+		//glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+
+		//gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGB, texturas.Ancho(), texturas.Alto(), GL_RGB, GL_UNSIGNED_BYTE, texturas.Dir_Imagen());
+
+		//texturas.Descarga();
+
+		//ShaderDemo *shader = new ShaderDemo("fragmentShader.glsl", "vertexShader.glsl");
+		//shader->ligador(shader->vertShader, shader->fragShader);
 
 	texturas.Carga(top);
 	glGenTextures(1, &m_texturas[SKY_TOP]);
@@ -158,6 +158,8 @@ public:
 	glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
 	gluBuild2DMipmaps(GL_TEXTURE_2D, GL_RGB, texturas.Ancho(), texturas.Alto(), GL_RGB, GL_UNSIGNED_BYTE, texturas.Dir_Imagen());
 	texturas.Descarga();
+
+
 
 
 	return true;
@@ -302,13 +304,18 @@ public:
 		glPopMatrix();
   }
   enum {
+	  TERRAIN_ONE,
+	  TERRAIN_TWO
+  };
+
+  enum {
 		SKY_TOP,
 		SKY_BOTTOM,
 		SKY_FRONT,
 		SKY_BACK,
 		SKY_LEFT,
 		SKY_RIGHT,
-		WATER
+		WATER		
 	};
 };
 

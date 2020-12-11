@@ -61,11 +61,11 @@
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
-      <AdditionalIncludeDirectories>$(ProjectDir)Dependence/freeglut-3.0.0/include;$(ProjectDir)Dependence/glfw-3.3.2.bin.WIN32/include;D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\glew-2.1.0\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\freeglut-3.0.0\include\GL;D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\glfw-3.3.2.bin.WIN32\include\GLFW;D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\glew-2.1.0\lib\Release\Win32</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>glew32.lib;glew.lib;freeglutd.lib;comctl32.lib;dinput8.lib;dxguid.lib;gdi32.lib;GdiPlus.lib;glu32.lib;OpenGL32.lib;User32.lib;winmm.lib;%(AdditionalDependencies);glew.lib</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(ProjectDir)Dependence/freeglut-3.0.0/lib;$(ProjectDir)Dependence/glfw-3.3.2.bin.WIN32/lib-vc2017;D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\glew-2.1.0\lib\Release\Win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglutd.lib;glew.lib;glew32.lib;comctl32.lib;dinput8.lib;dxguid.lib;gdi32.lib;GdiPlus.lib;glu32.lib;OpenGL32.lib;User32.lib;winmm.lib;%(AdditionalDependencies);glew.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)Dependence/glfw-3.3.2.bin.WIN32/lib-vc2017;D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\freeglut-3.0.0\lib;D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\glew-2.1.0\lib\Release\Win32</AdditionalLibraryDirectories>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <TargetMachine>MachineX86</TargetMachine>
@@ -81,7 +81,7 @@
       <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalIncludeDirectories>$(ProjectDir)Dependence/freeglut-3.0.0/include;$(ProjectDir)Dependence/glfw-3.3.2.bin.WIN32/include;D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\glew-2.1.0\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\freeglut-3.0.0\include\GL;D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\glfw-3.3.2.bin.WIN32\include\GLFW;D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\glew-2.1.0\lib\Release\Win32</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -89,8 +89,8 @@
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX86</TargetMachine>
-      <AdditionalLibraryDirectories>$(ProjectDir)Dependence/freeglut-3.0.0/lib;$(ProjectDir)Dependence/glfw-3.3.2.bin.WIN32/lib-vc2017;D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\glew-2.1.0\lib\Release\Win32</AdditionalLibraryDirectories>
-      <AdditionalDependencies>glew32.lib;glew.lib;freeglutd.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);glew.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(ProjectDir)Dependence/glfw-3.3.2.bin.WIN32/lib-vc2017;D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\freeglut-3.0.0\lib;D:\VSproyects\Plantilla_GC1\Graficas_01\demowin32p3\demowin32\Dependence\glew-2.1.0\lib\Release\Win32</AdditionalLibraryDirectories>
+      <AdditionalDependencies>freeglutd.lib;glew.lib;glew32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies);glew.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -107,6 +107,7 @@
     <ClInclude Include="cargaImgs.h" />
     <ClInclude Include="cargaOps.h" />
     <ClInclude Include="CGfxOpenGL.h" />
+    <ClInclude Include="glew.h" />
     <ClInclude Include="glm.h" />
     <ClInclude Include="Matrizes.h" />
     <ClInclude Include="shader.h" />
@@ -115,6 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="fragmentShader.glsl" />
+    <None Include="vertexShader.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

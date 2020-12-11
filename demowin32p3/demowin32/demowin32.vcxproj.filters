@@ -65,9 +65,15 @@
     <ClInclude Include="shader.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
+    <ClInclude Include="glew.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="fragmentShader.glsl">
+      <Filter>Archivos de recursos</Filter>
+    </None>
+    <None Include="vertexShader.glsl">
       <Filter>Archivos de recursos</Filter>
     </None>
   </ItemGroup>
